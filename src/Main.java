@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         int selection;
         while (true) {
+            System.out.println("\n");
             System.out.println("Hi, please kindly select one of the items below :");
             System.out.print(
                     "1. Functional Interfaces\n" +
@@ -20,7 +21,7 @@ public class Main {
                             "4. DateTime API\n" +
                             "5. Exit");
 
-            selection = safeIntegerInput("Your Selection : ");
+            selection = safeIntegerInput("\nYour Selection : ");
 
             if (selection == 5) {
                 break;
@@ -40,8 +41,23 @@ public class Main {
                     streamExample.startStream();
                     break;
                 case 4:
+                    System.out.println("-=>Date time without timezone");
+                    LocalDriver LD = new LocalDriver();
+                    LD.LocalDateTimeApi();
+                    System.out.println("-=>Date time with timezone");
+                    ZonedDriver ZD = new ZonedDriver();
+                    ZD.ZonedTimeAndDate();
+                    System.out.println("-=>Checking birthday period and duration against today");
+                    PeriodandDurationDriver P = new PeriodandDurationDriver();
+                    P.checkingDuration();
+                    P.checkingPeriod();
+                    System.out.println("-=>Temporal Adjuster Calculation");
+                    TemporalAdjusterDriver T = new TemporalAdjusterDriver();
+                    T.checkingAdjusters();
                     break;
             }
+            scanner.nextLine();
+            scanner.nextLine();
         }
     }
 
