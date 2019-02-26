@@ -1,4 +1,6 @@
 
+import com.mitrais.pbi2.StreamMethodReference;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -12,14 +14,13 @@ public class Main {
             System.out.print(
                     "1. Functional Interfaces\n" +
                             "2. Lambda Expressions\n" +
-                            "3. Stream\n" +
-                            "4. Method Reference\n" +
-                            "5. DateTime API\n" +
-                            "6. Exit");
+                            "3. Stream and Method Reference\n" +
+                            "4. DateTime API\n" +
+                            "5. Exit");
 
             selection = safeIntegerInput("Your Selection : ");
 
-            if (selection == 6) {
+            if (selection == 5) {
                 break;
             }
 
@@ -29,10 +30,10 @@ public class Main {
                 case 2:
                     break;
                 case 3:
+                    StreamMethodReference streamExample=new StreamMethodReference();
+                    streamExample.startStream();
                     break;
                 case 4:
-                    break;
-                case 5:
                     break;
             }
         }
