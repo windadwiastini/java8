@@ -3,7 +3,7 @@ package com.mitrais.pbi2;
 import java.util.function.*;
 
 public class FunctionalInterfaceDemo {
-    public static void main(String[] args) {
+    public void startDemo() {
         System.out.println("===Predicate interface===");
         Predicate<Integer> isEven = (num) -> num%2==0;
         System.out.println(isEven.test(4) ? "Even" : "Odd");

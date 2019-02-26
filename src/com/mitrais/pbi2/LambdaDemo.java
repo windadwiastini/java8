@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class LambdaDemo {
-    public static void main(String[] args) {
+    public void startDemo() {
         System.out.println("===Anonymous Inner Class===");
         NumberOperation numberOperation = new NumberOperation() {
             @Override

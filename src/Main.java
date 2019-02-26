@@ -1,4 +1,6 @@
 
+import com.mitrais.pbi2.FunctionalInterfaceDemo;
+import com.mitrais.pbi2.LambdaDemo;
 import com.mitrais.pbi2.StreamMethodReference;
 
 import java.util.InputMismatchException;
@@ -26,11 +28,15 @@ public class Main {
 
             switch (selection) {
                 case 1:
+                    FunctionalInterfaceDemo funcInterfaceDemo = new FunctionalInterfaceDemo();
+                    funcInterfaceDemo.startDemo();
                     break;
                 case 2:
+                    LambdaDemo lambdaDemo = new LambdaDemo();
+                    lambdaDemo.startDemo();
                     break;
                 case 3:
-                    StreamMethodReference streamExample=new StreamMethodReference();
+                    StreamMethodReference streamExample = new StreamMethodReference();
                     streamExample.startStream();
                     break;
                 case 4:
