@@ -1,7 +1,5 @@
 
-import com.mitrais.pbi2.FunctionalInterfaceDemo;
-import com.mitrais.pbi2.LambdaDemo;
-import com.mitrais.pbi2.StreamMethodReference;
+import com.mitrais.pbi2.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -56,7 +54,6 @@ public class Main {
                     T.checkingAdjusters();
                     break;
             }
-            scanner.nextLine();
             scanner.nextLine();
         }
     }
