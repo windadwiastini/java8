@@ -10,7 +10,7 @@ public class TemporalAdjusterDriver {
     public void checkingAdjusters()
     {
 
-        LocalDate date = LocalDate.of(1996,4,17);
+        LocalDate date = LocalDate.of(2000,1,1);
         System.out.println("the current date is "+
                 date);
 
@@ -22,13 +22,13 @@ public class TemporalAdjusterDriver {
         System.out.println("firstDayOfNextMonth : " +
                 dayOfNextMonth );
 
-        // get the next saturday
-        LocalDate nextSaturday =
+        // get the next monday
+        LocalDate nextMonday =
                 date.with(TemporalAdjusters.
-                        next(DayOfWeek.SATURDAY));
+                        next(DayOfWeek.MONDAY));
 
-        System.out.println("next saturday from now is "+
-                nextSaturday);
+        System.out.println("next monday from now is "+
+                nextMonday);
 
         // first day of current month
         LocalDate firstDay =
@@ -46,6 +46,5 @@ public class TemporalAdjusterDriver {
         System.out.println("lastDayOfMonth : " +
                 lastDay);
     }
-
     // Driver code
 }
