@@ -21,7 +21,7 @@ public class FunctionalInterfaceDemo {
 
         System.out.println("===Consumer interface===");
         Consumer<Double> checkGrade = (score) -> System.out.println(score>75 ? "Passed" : "Not Passed");
-        checkGrade.accept(80d);
+        checkGrade.accept(80d) ;
         checkGrade.accept(75d);
 
         System.out.println("===Supplier interface===");

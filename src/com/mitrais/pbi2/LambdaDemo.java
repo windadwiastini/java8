@@ -39,10 +39,11 @@ public class LambdaDemo {
         country.add("U.S.A");
         country.add("Thailand");
         country.add("Bali");
+        country.forEach(System.out::println);
 
-        List<String> modifiedCountry = country.stream()
-                                        .map((name) -> (name == "Bali") ? "Indonesia":name)
-                                        .collect(Collectors.toList());
-        modifiedCountry.forEach(System.out::println);
+        country = country.stream()
+                                .map((name) -> (name == "Bali") ? "Indonesia" : name)
+                                .collect(Collectors.toList());
+        country.forEach(System.out::println);
     }
 }
